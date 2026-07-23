@@ -19,7 +19,9 @@ import java.time.Instant;
         name = "video_comments",
         indexes = {
                 @Index(name = "idx_video_comments_video_status_created", columnList = "video_id,status,created_at"),
-                @Index(name = "idx_video_comments_author_id", columnList = "author_id")
+                @Index(name = "idx_video_comments_author_id", columnList = "author_id"),
+                @Index(name = "idx_videos_comments_cursor", columnList = "video_id, created_at, id")
+
         }
 )
 public class VideoComment {

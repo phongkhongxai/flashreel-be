@@ -8,7 +8,7 @@ import com.phongkoxai.shortvideosappx.video.enums.VideoStatus;
 import com.phongkoxai.shortvideosappx.video.mapper.VideoMapper;
 import com.phongkoxai.shortvideosappx.video.repository.UserFollowRepository;
 import com.phongkoxai.shortvideosappx.video.repository.VideoLikeRepository;
-import com.phongkoxai.shortvideosappx.video.repository.VideoRepository;
+import com.phongkoxai.shortvideosappx.video.config.VideoRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

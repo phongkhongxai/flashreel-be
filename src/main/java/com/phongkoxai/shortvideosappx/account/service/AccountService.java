@@ -6,7 +6,7 @@ import com.phongkoxai.shortvideosappx.auth.entity.User;
 import com.phongkoxai.shortvideosappx.auth.repository.UserRepository;
 import com.phongkoxai.shortvideosappx.common.exception.AppException;
 import com.phongkoxai.shortvideosappx.common.exception.ErrorCode;
-import com.phongkoxai.shortvideosappx.video.repository.VideoRepository;
+import com.phongkoxai.shortvideosappx.video.config.VideoRepository;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;

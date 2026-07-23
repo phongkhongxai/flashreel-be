@@ -3,6 +3,10 @@ server:
 spring:
   application:
     name: short-videos-appx
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
   datasource:
     url: "${DB_URL:jdbc:mysql://localhost:3307/short_video}"
     driverClassName: "com.mysql.cj.jdbc.Driver"

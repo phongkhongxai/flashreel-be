@@ -1,4 +1,4 @@
-package com.phongkoxai.shortvideosappx.video.repository;
+package com.phongkoxai.shortvideosappx.video.config;
 
 import com.phongkoxai.shortvideosappx.video.entity.Video;
 import com.phongkoxai.shortvideosappx.video.enums.VideoStatus;

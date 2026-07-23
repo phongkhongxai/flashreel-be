@@ -21,7 +21,7 @@ import com.phongkoxai.shortvideosappx.video.enums.VideoStatus;
 import com.phongkoxai.shortvideosappx.video.mapper.VideoMapper;
 import com.phongkoxai.shortvideosappx.video.repository.UserFollowRepository;
 import com.phongkoxai.shortvideosappx.video.repository.VideoLikeRepository;
-import com.phongkoxai.shortvideosappx.video.repository.VideoRepository;
+import com.phongkoxai.shortvideosappx.video.config.VideoRepository;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;

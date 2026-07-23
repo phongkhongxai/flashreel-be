@@ -1,9 +1,12 @@
 package com.phongkoxai.shortvideosappx.video.controller;
 
 import com.phongkoxai.shortvideosappx.common.response.ApiResponse;
+import com.phongkoxai.shortvideosappx.common.response.CursorResponse;
 import com.phongkoxai.shortvideosappx.common.response.PageResponse;
 import com.phongkoxai.shortvideosappx.video.dto.request.CommentCreationRequest;
 import com.phongkoxai.shortvideosappx.video.dto.response.CommentResponse;
+import com.phongkoxai.shortvideosappx.video.dto.response.VideoResponse;
+import com.phongkoxai.shortvideosappx.video.enums.VideoStatus;
 import com.phongkoxai.shortvideosappx.video.service.CommentService;
 import jakarta.validation.Valid;
 import lombok.AccessLevel;
@@ -25,6 +28,15 @@ public class CommentController {
             @RequestParam(defaultValue = "20") int size) {
         return ApiResponse.<PageResponse<CommentResponse>>builder()
                 .result(commentService.getComments(videoId, page, size))
+                .build();
+    }
+    @GetMapping("/cursor")
+    ApiResponse<CursorResponse<CommentResponse>> getCommentsByCursor(
+            @PathVariable String videoId,
+            @RequestParam(required = false) String cursor,
+            @RequestParam(defaultValue = "20") int size) {
+        return ApiResponse.<CursorResponse<CommentResponse>>builder()
+                .result(commentService.getCommentsCursor(videoId, cursor, size))
                 .build();
     }
 
