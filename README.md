@@ -6,6 +6,14 @@ This repository currently contains the Spring Boot backend for the MVP loop:
 
 `publish video -> review in admin backend -> approved video appears in feed -> users view / like / follow`
 
+## Repositories
+
+| Component | Repository |
+|-----------|------------|
+| 🖥 Backend | https://github.com/phongkhongxai/flashreel-be |
+| 🌐 Frontend | https://github.com/phongkhongxai/flashreel-fe |
+| 📱 Android app | https://github.com/phongkhongxai/flashreel-android |
+
 ## Product scope
 
 FlashReel is planned as:
