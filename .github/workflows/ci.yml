@@ -38,7 +38,7 @@ jobs:
           --health-retries=10
 
     env:
-      DB_URL: jdbc:mysql://localhost:3306/short_video
+      DB_URL: jdbc:mysql://localhost:3306/short_video?useSSL=false&allowPublicKeyRetrieval=true
       DB_USERNAME: root
       DB_PASSWORD: ci-password
       REDIS_HOST: localhost
@@ -65,4 +65,12 @@ jobs:
         run: chmod +x mvnw
 
       - name: Build and test
-        run: ./mvnw -B verify
+        run: ./mvnw -B -e verify
+
+      - name: Upload test reports
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: surefire-reports
+          path: target/surefire-reports
+          if-no-files-found: ignore
