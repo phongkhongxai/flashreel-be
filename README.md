@@ -10,14 +10,13 @@ This repository currently contains the Spring Boot backend for the MVP loop:
 
 FlashReel is planned as:
 
-- iOS App
 - Android App
 - Admin backend web
 
 The first release focuses on a tight MVP:
 
 - account registration and login
-- Google / Apple sign-in support
+- Google sign-in support
 - profile management
 - short video upload
 - moderation workflow
@@ -88,9 +87,9 @@ Based on the code in this repo, the backend already includes these main areas:
 
 The project is configured so secrets do not need to stay in `application.yaml`.
 
-- shared defaults live in [src/main/resources/application.yaml](C:/Users/phong.truong/IdeaProjects/short-videos-appx/src/main/resources/application.yaml:1)
-- local secrets live in [src/main/resources/application-local.yaml](C:/Users/phong.truong/IdeaProjects/short-videos-appx/src/main/resources/application-local.yaml:1)
-- local-only config files are ignored by [.gitignore](C:/Users/phong.truong/IdeaProjects/short-videos-appx/.gitignore:1)
+- shared defaults live in [src/main/resources/application.yaml].
+- local secrets live in [src/main/resources/application-local.yaml].
+- local-only config files are ignored by [.gitignore].
 
 Enable the local profile before starting the app:
 
