@@ -61,5 +61,8 @@ jobs:
           java-version: "21"
           cache: maven
 
+      - name: Grant Maven Wrapper execute permission
+        run: chmod +x mvnw
+
       - name: Build and test
         run: ./mvnw -B verify
